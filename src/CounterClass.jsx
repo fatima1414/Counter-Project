@@ -25,15 +25,18 @@ class CounterClass extends Component {
     render() {
         return (
             <>
-
-                <div>
-                    <h1>With Using ClassComponent</h1>
-                    <div className="mx-auto my-5 p-5 shadow text-center">
-                        <h2>{this.state.count}</h2>
-
-                        <button className="btn btn-success me-3" onClick={this.plus}>+</button>
-                        <button className="btn btn-danger" onClick={this.minus}>-</button>
-
+                <div className="container my-5">
+                    <div className="row justify-content-center">
+                        <div className="col-10 col-sm-8 col-md-6 col-lg-4">
+                            <div className="card shadow-lg text-center p-4">
+                                <h2 className="mb-3 text-primary">ClassComponent</h2>
+                                <h3 className="display-5 fw-bold text-dark">{this.state.count}</h3>
+                                <div className="mt-3">
+                                    <button className="btn btn-success btn-lg me-3" onClick={this.plus}>+</button>
+                                    <button className="btn btn-danger btn-lg" onClick={this.minus}>-</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

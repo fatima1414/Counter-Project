@@ -12,14 +12,22 @@ const CounterFn = () => {
 
     return (
         <>
-            <div><h1>With Using Function</h1>
-                <div className="mx-auto my-5 p-5 shadow text-center">
-                    <h2>{count}</h2>
-                    <button className="btn btn-danger me-4" onClick={plus}>+</button>
-                    <button className="btn btn-success " onClick={minus}>-</button>
-
+            <div className="container my-5">
+                <div className="row justify-content-center">
+                    <div className="col-10 col-sm-8 col-md-6 col-lg-4">
+                        <div className="card shadow-lg text-center p-4">
+                            <h2 className="mb-3 text-primary">With Function</h2>
+                            <h3 className="display-5 fw-bold text-dark">{count}</h3>
+                            <div className="mt-3 d-flex justify-content-center">
+                                <button className="btn btn-success btn-lg me-3" onClick={plus}>plus</button>
+                                <button className="btn btn-danger btn-lg" onClick={minus}>minus</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
         </>
     )
 }
